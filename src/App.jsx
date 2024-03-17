@@ -2,6 +2,7 @@ import React from "react";
 import "./App.css";
 import Navbar from "./components/navbar";
 import AboutUs from "./components/about-us";
+import Services from "./components/services";
 
 
 
@@ -11,6 +12,7 @@ function App() {
     <React.Fragment>
       <Navbar />
       <div className="space"></div>
+      <Services />
       <AboutUs />
     </React.Fragment>
   );

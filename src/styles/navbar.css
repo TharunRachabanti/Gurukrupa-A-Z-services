@@ -1,136 +1,102 @@
-@import url('https://fonts.googleapis.com/css2?family=Pridi:wght@200;300;400;500;600;700&display=swap');
+/* navbar.css */
 .navbar {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between; /* Adjust spacing between items */
-    align-items: center; /* Align items horizontally */
-    background-image: url('assets/nav21.png');
-    background-size: cover;
-    background-position: center;
-    height: 1400px;
-    width: 100%;
-    
-    border-radius: 0 0 50px 50px;
-    margin-bottom:0rem;
-    margin-top: 0rem;
-
-  }
-  .log img{
-
-    height: 60px;
-    width: 75px;
-
-}
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url('assets/navfix1.png');
+  background-size: cover;
+  background-position: center;
+  border-radius: 0 0 0px 0px;
+  margin-bottom: 0;
+  margin-top: 0;
   
-
-.Appbar {
-    width: 100%;
-    text-align: center;
-    padding: 10px 10px; /* Adjust padding as needed */
-    /* Semi-transparent background */
-    display: flex;
-    justify-content: space-between; /* Adjust spacing between logo and titles */
-    align-items: center;
   
-  }
-  
-  .title h1 {
-    width: 100%;
-    text-align:center;
-    padding-left: 10px;
-    padding-right: 10px;
-    font-size: 120px; /* Adjust the font size as needed */
-    color: #084992; /* Corrected linear gradient syntax */
-    margin-top: 15px;
-    margin-bottom: 5px;
-    word-spacing: 0.3em;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    text-shadow: 
-        -5px -5px 0 rgba(255, 255, 255, 0.557),  
-         1px -5px 0 rgba(255, 255, 255, 0.557),
-        -5px  1px 0 rgba(255, 255, 255, 0.557),
-         1px  1px 0 rgb(238, 244, 244);  /* Apply Roboto font */
-    /* Border effect with black color */
-     /* Add elevation effect */
 }
 
-  
-  
-  
-  .para {
-    width: 100%;
-    text-align: center;
-    padding-top: -150px;
-    padding-bottom: 10px;
-  
-    padding-left: 20px;
-    padding-right: 20px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman';
-    line-height: 1.3;
-    font-weight:100;
-    margin-top: 1px;
-    color: rgb(255, 255, 255);
-    
-    width: 85%;
-   
-    
-    background-color: rgba(5, 0, 0, 0.1);
+.appbar {
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-backdrop-filter: blur (10px);
+.logo img {
+  height: 60px;
+  width: 75px;
+}
 
--webkit-backdrop-filter: blur(10px);
+.titles {
+  margin-right: 40px;
+}
 
-border-radius: 20px;
+.titles button {
+  background-color: transparent;
+  margin-left: 30px;
+  padding-right: 10px;
+  padding-left: 10px;
+  color: #f8f9f9;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bolder;
+  font-size: 20px;
+  border-radius: 10px;
+  box-shadow: 1px 10px 20px #084992;
+}
 
-border:1px solid rgba(255, 255, 255, 0.18);
+.title h1 {
+  width: 100%;
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 120px;
+  color: #084992;
+  margin-top: 30px;
+  margin-bottom: 5px;
+  word-spacing: 0.3em;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-shadow: -5px -5px 0 rgba(255, 255, 255, 0.557), 1px -5px 0 rgba(255, 255, 255, 0.557), -5px 1px 0 rgba(255, 255, 255, 0.557), 1px 1px 0 rgb(238, 244, 244);
+}
 
-box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-/* Adjust the alpha value (0.5 for 50% opacity) */
+.para {
+  width: 85%;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman';
+  line-height: 1.3;
+  font-weight: 100;
+  margin-top: 1px;
+  color: rgb(255, 255, 255);
+  background-color: rgba(5, 0, 0, 0.1);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 }
 
 .highlighted-text {
-  color: #69cfcf; /* Change the color to the desired one */
-}
-
-  .titles{
-    margin-right:  40px; ;
-  }
-
-  .titles button {
-    background-color:transparent;
-
-  
-    margin-left: 30px; 
-
-
-    padding-right: 10px;
-    padding-left: 10px;
-
-
-    color: rgb(248, 249, 249);
-    font-family: 'Times New Roman', Times, serif;
-    font-weight:bolder;
-    font-size: 20px;
-    border-radius: 10px;
-    box-shadow: 1px 10px 20px #084992;;
-    
-    /* Add space between the buttons */
+  color: #69cfcf;
 }
 
 .connect-button {
   text-align: center;
-  margin-top: 5px;
-  margin-bottom: 15px;
+  margin-top: 40px;
+  margin-bottom: 0px;
 }
 
 .connect-button button {
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-weight:bolder;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: bolder;
   font-size: 25px;
   padding: 7px 60px;
   border: 0px solid #000000;
   background-image: linear-gradient(45deg, rgba(0, 28, 73, 0.8), rgba(2, 81, 165, 0.8));
-  color:#69cfcf;
+  color: #69cfcf;
   border-radius: 30px;
   cursor: pointer;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -149,7 +115,7 @@ box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
   padding: 7px 60px;
   border-radius: 30px;
   background-image: linear-gradient(45deg, rgba(17, 69, 69, 10), rgba(0, 123, 255, 10));
-  color:#69cfcf;
+  color: #69cfcf;
   opacity: 0;
   transition: opacity 0.3s ease;
   pointer-events: none;
@@ -163,43 +129,3 @@ box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
   transform: scale(0.95);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 15);
 }
-
- .card {
-  border-radius: 100px 100px 100px 100px;
-  backdrop-filter: blur (10px);
-
-  -webkit-backdrop-filter: blur(10px);
-  
-
-  
-  border:1px solid rgba(255, 255, 255, 0.5);
-  
-  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-  width:95%;
-  background-color: rgba(5, 0, 0, 0.1);
-
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin: 10px;
-  margin-bottom: 10px;
-  overflow: hidden;
-  text-align: center;
-  transition: all 0.3s ease-in-out;
-}
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-}
-.card-header {
-  background-color: rgba(105, 207, 207, 0.5); 
-  padding: 10px;
-  color: #fff6f6;
-
-  font-size: 24px;
-  font-weight: bold;
-}
-.card-body {
-  height: 900px;
-  
-  padding: 20px;
-  color: #fff6f6;
-} 

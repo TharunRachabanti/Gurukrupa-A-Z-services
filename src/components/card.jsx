@@ -1,30 +1,71 @@
+import React from "react";
 import "../styles/card.css";
+import { motion } from "framer-motion";
 
-const Card = ({ imgSrc, imgAlt, title, description, buttonText, link }) => {
+const Card = ({ title, description, image, buttonText, link }) => {
   return (
-    <div className="card-container">
-      {imgSrc && imgAlt && (
-        <img src={imgSrc} alt={imgAlt} className="card-img" />
+    <motion.div
+      className="card-container"
+      initial={{ opacity: 0, y: 50 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5 }}
+    >
+      {title && (
+        <motion.h1
+          className="card-title"
+          initial={{ x: -100 }}
+          animate={{ x: 0 }}
+          transition={{ delay: 0.2, type: "spring", stiffness: 120 }}
+        >
+          {title}
+        </motion.h1>
       )}
-      {title && <h1 className="card-title">{title}</h1>}
+      {image && (
+        <motion.img
+          src={image}
+          alt={title}
+          className="card-image"
+          initial={{ scale: 0 }}
+          animate={{ rotate: 360, scale: 1 }}
+          transition={{
+            type: "spring",
+            stiffness: 260,
+            damping: 20,
+          }}
+        />
+      )}
+
       {Array.isArray(description) && description.length > 0 && (
-        <ul className="card-description">
+        <motion.ul
+          className="card-description"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.4 }}
+        >
           {description.map((item, index) => (
-            <li key={index}>
-            <span>&#10148;</span> {item}
-          </li>
+            <motion.li
+              key={index}
+              initial={{ x: -10, opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              transition={{ delay: 0.5 + index * 0.1 }}
+            >
+              <span>➤</span> {item}
+            </motion.li>
           ))}
-        </ul>
-      )}
-      {typeof description === "string" && (
-        <p className="card-description">{description}</p>
+        </motion.ul>
       )}
       {buttonText && link && (
-        <a href={link} className="card-btn">
+        <motion.a
+          href={link}
+          className="card-btn"
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+        >
           {buttonText}
-        </a>
+        </motion.a>
       )}
-    </div>
+    </motion.div>
   );
 };
+
 export default Card;

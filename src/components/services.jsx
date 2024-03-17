@@ -1,124 +1,179 @@
+// // Services.js
+// import React from "react";
+// import "../styles/services.css";
+// import Card from "./card";
+
+// const Services = () => {
+//   const additionalInfo = {
+//     Insurance: [
+//       "Providing new policies.",
+//       "Service towards old policies.",
+//       "Claims and loan services.",
+//       "Nominee and other changes in policies.",
+//       "Other Life Insurances: Tata, ICICI, BAJAJ.",
+//       "Vehicles and General Insurances.",
+//     ],
+//     Job: [
+//       "Technical Jobs.",
+//       "Non-Technical Jobs.",
+//       "Skilled Jobs.",
+//       "Semi-Skilled Jobs.",
+//       "Unskilled Jobs.",
+//       "Part-time Jobs.",
+//       "Jobs for retired persons.",
+//       "Jobs for women.",
+//     ],
+//     RealEstate: [
+//       "New open plots.",
+//       "Apartment plots.",
+//       "Individual houses.",
+//       "Old houses.",
+//       "Re-sale properties.",
+//       "Rented houses.",
+//       "Sites for lease.",
+//     ],
+//     Shopping: [
+//       "Furniture products.",
+//       "Clothes.",
+//       "Groceries.",
+//       "Presentation Articles.",
+//       "Cosmetic Products.",
+//       "Herbal Products.",
+//     ],
+//     FoodSupply: [
+//       "Catering Services.",
+//       "Meals Supply.",
+//       "Providing chefs.",
+//       "Event Management in Food Supply.",
+//     ],
+//     Spiritual: [
+//       "Providing information about social service organizations.",
+//       "Guidance for social services.",
+//       "Providing blood donors information.",
+//       "Providing contacts.",
+//     ],
+//   };
+
+//   return (
+//     <div className="services">
+//       {Object.entries(additionalInfo).map(([title, description], index) => (
+//         <Card
+//           key={index}
+//           title={title}
+//           description={description}
+//           buttonText="Get Brochure"
+//           link="something"
+//         />
+//       ))}
+//     </div>
+//   );
+// };
+
+// export default Services;
 
 
+
+// Services.js
 import React from "react";
 import "../styles/services.css";
 import Card from "../components/card";
+import insuranceImage from "/assets/serv17.png"; // Example image import
+import jobImage from "/assets/serv3.png";
+import jobmage from "/assets/serv2.png"; 
+import realestate from "/assets/serv13.png";
+import shopping from "/assets/serv7.png";  
+import foodsupply from "/assets/serv16.png"; 
+import spirtual from "/assets/serv11.png";  // Example image import
+// ... import other images similarly
 
-const OurServices = () => {
+const Services = () => {
   const additionalInfo = {
-    Insurace: [
-      "Providing new policies.",
+    Insurance: {
+      description: [
+        "Providing new policies.",
       "Service towards old policies.",
       "Claims and loan services.",
       "Nominee and other changes in policies.",
       "Other Life Insurances: Tata, ICICI, BAJAJ.",
       "Vehicles and General Insurances.",
-    ],
-
-    Job: [
-      "Technical Jobs.",
+        
+        // ... other items
+      ],
+      image: insuranceImage,
+    },
+    Job: {
+      description: [
+        "Technical Jobs.",
       "Non-Technical Jobs.",
       "Skilled Jobs.",
       "Semi-Skilled Jobs.",
       "Unskilled Jobs.",
       "Part-time Jobs.",
-      "Jobs for retaired persons.",
+      "Jobs for retired persons.",
       "Jobs for women.",
-       
-    ],
-    RealEstate: [
+        // ... other items
+      ],
+      image: jobImage,
+    },
+    RealEstate:{ 
+      description: [
       "New open plots.",
-      "Appartment plots.",
+      "Apartment plots.",
       "Individual houses.",
       "Old houses.",
       "Re-sale properties.",
       "Rented houses.",
       "Sites for lease.",
     ],
-
-    Shopping: [
-      "Furniture products.",
-      "Clothes.",
-      "Grocerories.",
-      "Presentation Articles.",
-      "Cosmetic Products.",
-      "Herbal Products.",
-    ],
-
-    FoodSupply: [
-      "Cattering Services.",
-      "Meals Supply.",
-      "Providing cheffs.",
-      "Event Management in Food Supply,",
-    ],
-    Spirutual: [
-      "Providing information about social serice organization.",
-      "Guidness for social services.",
-      "Providing blood donors infomation.",
-      "Providing contacts.",
-    ],
+    image: realestate,
+  },
+  Shopping:{
+    description: [
+    "Furniture products.",
+    "Clothes.",
+    "Groceries.",
+    "Presentation Articles.",
+    "Cosmetic Products.",
+    "Herbal Products.",
+  ],
+  image:shopping,
+},
+FoodSupply:{
+  description: [
+  "Catering Services.",
+  "Meals Supply.",
+  "Providing chefs.",
+  "Event Management in Food Supply.",
+],
+image:foodsupply,
+},
+Spiritual:{
+  description: [
+  "Providing information about social service organizations.",
+  "Guidance for social services.",
+  "Providing blood donors information.",
+  "Providing contacts.",
+],
+image:spirtual,
+},
+    // ... other categories with their images
   };
 
   return (
-    <div>
     <div className="services">
-      <Card
-        imgSrc="assets/img1.png"
-        imgAlt="Card Image 1"
-        title="Insurace Consultancy"
-        description={additionalInfo["Insurace"]}
-        buttonText="Get Brochure"
-        link="something"
-      />
-
-      <Card
-        imgSrc="assets/img3.png"
-        imgAlt="Card Image 2"
-        title="Job Consultancy"
-        description={additionalInfo["Job"]}
-        buttonText="Get Brochure"
-        link="something"
-      />
-
-      <Card
-        imgSrc="assets/img2.png"
-        imgAlt="Card Image 1"
-        title="Insurace Consultancy"
-        description={additionalInfo["Insurace"]}
-        buttonText="Get Brochure"
-        link="something"
-      />
+      {Object.entries(additionalInfo).map(([title, { description, image }], index) => (
+        <Card
+          key={index}
+          title={title}
+          description={description}
+          image={image}
+          buttonText="Get Brochure"
+          link="something"
+        />
+      ))}
     </div>
-    <div className="services">
-    <Card
-      imgSrc="assets/img1.png"
-      imgAlt="Card Image 1"
-      title="Insurace Consultancy"
-      description={additionalInfo["Insurace"]}
-      buttonText="Get Brochure"
-      link="something"
-    />
-
-    <Card
-      imgSrc="assets/img3.png"
-      imgAlt="Card Image 2"
-      title="Job Consultancy"
-      description={additionalInfo["Job"]}
-      buttonText="Get Brochure"
-      link="something"
-    />
-
-    <Card
-      imgSrc="assets/img2.png"
-      imgAlt="Card Image 1"
-      title="Insurace Consultancy"
-      description={additionalInfo["Insurace"]}
-      buttonText="Get Brochure"
-      link="something"
-    />
-  </div>
-  </div>
   );
 };
 
-export default OurServices;
+export default Services;
+
