@@ -4,6 +4,7 @@ import Navbar from "./components/navbar";
 import AboutUs from "./components/about-us";
 import Services from "./components/services";
 import Bio from "./components/bio";
+import Difference from "./components/difference";
 
 
 
@@ -16,6 +17,7 @@ function App() {
       <Services />
       <AboutUs />
       <Bio/>
+      <Difference/>
     </React.Fragment>
   );
 }

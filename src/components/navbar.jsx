@@ -1,11 +1,17 @@
 // Navbar.js
-import React from "react";
+import React, { useEffect } from "react";
 import "../styles/navbar.css";
-import Services from "../components/services";
+import Services from "/components/services";
+import navImage from "/assets/navfix1.png"; // Import the image
 
 const Navbar = () => {
+  useEffect(() => {
+    var navbar = document.getElementById("navbar");
+    navbar.style.backgroundImage = `url(${navImage})`; // Set background image
+  }, []); // Empty dependency array ensures this effect runs only once, equivalent to componentDidMount
+
   return (
-    <div className="navbar">
+    <div id="navbar" className="navbar">
       <div className="appbar">
         <div className="logo">
           <img src="assets/logo1.png" alt="" />
