@@ -1,3 +1,35 @@
-.what-difference{
-    color: black;
-}
+.difference-container {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .difference-heading {
+    color: #333;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .difference-points {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .point {
+    margin-bottom: 10px;
+    color: #666;
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  
+  .point::before {
+    content: "•";
+    color: #007bff; /* You can change the color to match your design */
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+  }
+  

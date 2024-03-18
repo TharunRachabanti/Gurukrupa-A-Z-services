@@ -1,7 +1,7 @@
 // Navbar.js
 import React, { useEffect } from "react";
 import "../styles/navbar.css";
-import Services from "/components/services";
+import Services from "../components/services";
 import navImage from "/assets/navfix1.png"; // Import the image
 
 const Navbar = () => {
