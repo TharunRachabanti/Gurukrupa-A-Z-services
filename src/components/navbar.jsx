@@ -49,6 +49,9 @@ const Navbar = () => {
       <div className="connect-button">
         <button>CONNECT</button>
       </div>
+      <div className="connect-button">
+        <button>CONNECT</button>
+      </div>
       {/* <Services /> */}
     </div>
   );

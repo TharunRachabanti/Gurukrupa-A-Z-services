@@ -1,52 +1,82 @@
-.text-image-container,
-.image-text-container {
-  display: flex;
-  justify-content: space-between;
-  margin: -70px 50px; /* Center align and adjust margin */
-  height: auto; /* Remove fixed height */
+/* Styling for MainAboutComponent */
+.MainAboutComponent {
+  margin-top: -90px;
+  margin-bottom: 20px; /* Center align */
 }
 
-.MainAboutComponent {
-  width: 90%; /* Adjust width for better alignment */
-  margin: 0 auto; /* Center align */
+.mainimage-content img {
+  max-width: 100%;
+  max-height: 100%;
+  margin-bottom: -70px; /* Ensure image takes full width */
+
 }
 
 .maintext-content {
   text-align: justify; /* Justify text for a polished look */
-  padding: 10px; /* Increase padding for better spacing */
+  padding: 20px; /* Increase padding for better spacing */
+  font-size: 18px; /* Larger font size for readability */
+  line-height: 1.8; /* Increased line height for better legibility */
+  font-family: "Georgia", serif; /* Classic serif font for a classy feel */
+  color: #000000; 
+  font-weight: bolder;/* Dark grey text color for contrast */
+ /* Add a subtle border for a polished look */
 }
 
-.text-content,
-.image-content {
+/* Styling for text-image-container */
+.text-image-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 20px; /* Center align and adjust margin */
+  height: auto; /* Remove fixed height */
+
+}
+
+.tm-text-content,
+.tm-image-content
+{
   flex-basis: 50%;
   display: flex;
   align-items: center;
-  padding: 10px; /* Add padding for spacing */
+
 }
 
-.text-content p {
-  margin: 0;
+.tm-image-content img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  margin-left: 50px;
 }
 
-.image-content {
+/* Styling for image-text-container */
+.image-text-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 20px; /* Center align and adjust margin */
+  height: auto; 
+}
+
+.mt-text-content,
+.mt-image-content
+ {
+  flex-basis: 50%;
+  display: flex;
+  align-items: center;
+}
+.tm-image-content {
+  justify-content: center;
+}
+.mt-image-content {
   justify-content: center;
 }
 
-.image-content img {
+.mt-image-content img {
   max-width: 100%;
-  max-height: 80%;
+  max-height: 100%;
   object-fit: contain;
+  margin-right: 50px;
 }
 
-.mainimage-content img {
-  max-height: 600px;
-  width: 100%;
-  margin-bottom: -70px; /* Ensure image takes full width */
-}
-.MainAboutComponent{
-  margin-top: -90px;
-}
-
+/* Styling for our-services-heading */
 .our-services-heading {
   font-family: "Georgia", serif;
   font-size: 24px; /* Adjust font size for better fit */
@@ -59,5 +89,39 @@
   margin-bottom: 20px;
   text-align: center; /* Center align the heading */
   padding: 10px; /* Add padding for spacing */
-  /* Add bottom border for emphasis */
+
+}
+
+/* Styling for space */
+.space {
+  margin-bottom: 100px; /* Adjust as needed */
+}
+
+.tm-text-content p {
+  margin-right: 30px;
+  font-size: 18px;
+  line-height: 1.6;
+  height: 80%;
+  width: 100%; /* Adjust width as needed *//* Center the paragraph and add spacing */
+  text-align:justify;/* Dark grey for contrast */
+  font-family: "Georgia", serif; /* Classic serif font for a classy feel */
+  color: #000000; 
+  font-weight: bolder;/
+}
+
+.mt-text-content p{
+  margin-left: 30px;
+  font-size: 18px;
+  line-height: 1.6;
+  height: 80%;
+  width: 100%; /* Adjust width as needed *//* Center the paragraph and add spacing */
+  text-align:justify;/* Dark grey for contrast */
+  font-family: "Georgia", serif; /* Classic serif font for a classy feel */
+  color: #000000; 
+  font-weight: bolder;
+  /* Add padding for spacing */
+  /* Rounded corners */
+  /* Light grey background */
+ /* Subtle shadow for depth */
+
 }

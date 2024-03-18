@@ -5,11 +5,11 @@ import "../styles/abouts-us.css";
 const TextImageComponent = ({ text, imageSource }) => {
   return (
     <div className="text-image-container">
-      <div className="text-content">
+      <div className="tm-text-content">
         <p>{text}</p>
       </div>
-      <div className="image-content">
-        <img src={imageSource} alt="Image" />
+      <div className="tm-image-content">
+        <img src={imageSource} alt="tm-Image" />
       </div>
     </div>
   );
@@ -19,10 +19,10 @@ const TextImageComponent = ({ text, imageSource }) => {
 const ImageTextComponent = ({ text, imageSource }) => {
   return (
     <div className="image-text-container">
-      <div className="image-content">
-        <img src={imageSource} alt="Image" />
+      <div className="mt-image-content">
+        <img src={imageSource} alt="mt-Image" />
       </div>
-      <div className="text-content">
+      <div className="mt-text-content">
         <p>{text}</p>
       </div>
     </div>
@@ -34,7 +34,7 @@ const MainAboutComponent = ({ text, imageSource }) => {
     <div className="MainAboutComponent">
 
       <div className="mainimage-content">
-        <img src={imageSource} alt="Image" />
+        <img src={imageSource} alt="mainImage" />
       </div>
       <p className="maintext-content">{text}</p>
     </div>
@@ -55,11 +55,11 @@ const AboutUs = () => {
       /> */}
       <ImageTextComponent
         text="At A-Z Services, our commitment to excellence is reflected in the numerous success stories and testimonials from satisfied clients. From helping individuals secure their dream job to assisting families in finding their perfect home, we take pride in our ability to make a meaningful difference in people's lives. Our track record of success is a testament to the dedication and expertise of our team, who work tirelessly to ensure client satisfaction. With A-Z Services by your side, you can rest assured that you're in capable hands every step of the way."
-        imageSource="/assets/aboutus3.4.1.png"
+        imageSource="/assets/aboutus3.4.png"
       />
       <TextImageComponent
         text="As we continue to expand our offerings and reach new milestones, we remain dedicated to upholding the highest standards of quality and integrity. Our commitment to excellence drives us to continually innovate and adapt to meet the evolving needs of our clients. Whether it's through pioneering new service offerings or leveraging the latest technologies, we are always looking for ways to enhance the value we provide. At A-Z Services, we are not just a service provider; we are your trusted partner in achieving your goals and aspirations."
-        imageSource="/assets/aboutus4.1.png"
+        imageSource="/assets/aboutus4.png"
       />
       <div className="space"></div>
     </div>
