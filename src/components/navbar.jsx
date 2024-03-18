@@ -22,7 +22,14 @@ const Navbar = () => {
       </div>
       <div className="para">
         <p>
-          Welcome to <strong className="highlighted-text">Gurukrupa AtoZ Services</strong>, your
+
+        <strong className="highlighted-text">Gurukrupa AtoZ Services</strong> is your one-stop destination for a diverse array of essential services. Whether you're seeking expert guidance on insurance, job placement, real estate transactions, or digital shopping, our team of professionals is here to assist you. We also extend our support to cover your basic needs, from food supply consultancy to a wide range of social, cultural, and spiritual services, making A-Z Services the ultimate solution for all your needs.
+
+
+
+
+
+          {/* Welcome to <strong className="highlighted-text">Gurukrupa AtoZ Services</strong>, your
           ultimate destination for a wide range of essential services. Our
           dedicated team of professionals is here to guide you through insurance,
           job placement, real estate transactions, and digital shopping, ensuring
@@ -30,7 +37,7 @@ const Navbar = () => {
           also offer assistance with food supply consultancy and provide a
           plethora of social, cultural, and spiritual services to cater to all
           your needs. A-Z Services is your comprehensive solution for all your
-          essential requirements.
+          essential requirements. */}
         </p>
       </div>
       <div className="connect-button">

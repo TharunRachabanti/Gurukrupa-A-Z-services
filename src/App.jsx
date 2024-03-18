@@ -3,6 +3,7 @@ import "./App.css";
 import Navbar from "./components/navbar";
 import AboutUs from "./components/about-us";
 import Services from "./components/services";
+import Bio from "./components/bio";
 
 
 
@@ -14,6 +15,7 @@ function App() {
       <div className="space"></div>
       <Services />
       <AboutUs />
+      <Bio/>
     </React.Fragment>
   );
 }
