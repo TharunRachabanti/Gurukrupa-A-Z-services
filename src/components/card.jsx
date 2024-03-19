@@ -3,6 +3,8 @@ import "../styles/card.css";
 import { motion } from "framer-motion";
 
 const Card = ({ title, description, image, buttonText, link }) => {
+  const pdfUrl =
+    "https://firebasestorage.googleapis.com/v0/b/gurukrupa-a-z-services.appspot.com/o/InsuranceConsultancyBroucher.pdf?alt=media&token=4b31c271-b7d3-49c3-ac0a-9be099e45352";
   return (
     <motion.div
       className="card-container"
@@ -56,7 +58,7 @@ const Card = ({ title, description, image, buttonText, link }) => {
       )}
       {buttonText && link && (
         <motion.a
-          href={link}
+          onClick={() => window.open(pdfUrl)}
           className="card-btn"
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
