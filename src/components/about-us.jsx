@@ -43,7 +43,7 @@ const MainAboutComponent = ({ text, imageSource }) => {
 
 const AboutUs = () => {
   return (
-    <div id="home">
+    <div id="about-us">
       <h2 className="our-services-heading">About Us</h2>
       <MainAboutComponent
         text="Welcome to Gurukrupa AtoZ Services, your ultimate destination for a wide range of essential services. Our dedicated team of professionals is always ready to serve you, ensuring that all your needs are met with just one click. Whether you require assistance with insurance, job placement, real estate transactions, or digital shopping, our experts are here to guide you every step of the way. Moreover, beyond the basics, we offer consultancy on food supply and provide a plethora of social, cultural, and spiritual services to cater to all your needs. With A-Z Services, rest assured that expert support is just a click away for all your essential requirements."
