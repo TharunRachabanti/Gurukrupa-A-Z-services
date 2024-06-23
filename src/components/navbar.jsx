@@ -54,7 +54,7 @@ const Navbar = () => {
           essential requirements. */}
         </p>
       </div>
-      <div className="connect-button"></div>
+      {/* <div className="connect-button"></div> */}
       <div className="connect-button">
         <button onClick={handleClick.bind(null, "contact-me-container")}>
           CONNECT
