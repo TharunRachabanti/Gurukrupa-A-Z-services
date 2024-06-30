@@ -32,7 +32,6 @@ const ImageTextComponent = ({ text, imageSource }) => {
 const MainAboutComponent = ({ text, imageSource }) => {
   return (
     <div className="MainAboutComponent">
-
       <div className="mainimage-content">
         <img src={imageSource} alt="mainImage" />
       </div>
@@ -44,15 +43,11 @@ const MainAboutComponent = ({ text, imageSource }) => {
 const AboutUs = () => {
   return (
     <div id="about-us">
-      <h2 className="our-services-heading">About Us</h2>
+      <h2 className="our-services-heading123">About Us</h2>
       <MainAboutComponent
         text="Welcome to Gurukrupa AtoZ Services, your ultimate destination for a wide range of essential services. Our dedicated team of professionals is always ready to serve you, ensuring that all your needs are met with just one click. Whether you require assistance with insurance, job placement, real estate transactions, or digital shopping, our experts are here to guide you every step of the way. Moreover, beyond the basics, we offer consultancy on food supply and provide a plethora of social, cultural, and spiritual services to cater to all your needs. With A-Z Services, rest assured that expert support is just a click away for all your essential requirements."
         imageSource="/assets/aboutsus1.3.1.png"
       />
-      {/* <TextImageComponent
-        text="Welcome to Gurukrupa AtoZ Services, your ultimate destination for a wide range of essential services. Our dedicated team of professionals is here to guide you through insurance, job placement, real estate transactions, and digital shopping, ensuring you have expert support every step of the way. Beyond the basics, we also offer assistance with food supply consultancy and provide a plethora of social, cultural, and spiritual services to cater to all your needs. A-Z Services is your comprehensive solution for all your essential requirements."
-        imageSource="/assets/aboutus1.1.png"
-      /> */}
       <ImageTextComponent
         text="At A-Z Services, our commitment to excellence is reflected in the numerous success stories and testimonials from satisfied clients. From helping individuals secure their dream job to assisting families in finding their perfect home, we take pride in our ability to make a meaningful difference in people's lives. Our track record of success is a testament to the dedication and expertise of our team, who work tirelessly to ensure client satisfaction. With A-Z Services by your side, you can rest assured that you're in capable hands every step of the way."
         imageSource="/assets/aboutus3.4.png"

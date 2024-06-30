@@ -1,15 +1,15 @@
-/* navbar.css */
 .navbar {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  background-size: cover; /* Adjust the size of the background image to cover the entire element */
+  background-size: cover;
   background-position: center;
   border-radius: 0 0 0px 0px;
   margin-bottom: 0;
   margin-top: 0;
   height: 500px;
+  position: relative; /* Ensure relative positioning for absolute children */
 }
 
 .appbar {
@@ -85,7 +85,7 @@
 .connect-button {
   text-align: center;
   margin-top: 0px;
-  margin-bottom: 0px;
+  margin-bottom: 20px;
 }
 
 .connect-button button {
@@ -129,4 +129,84 @@
   box-shadow: 0 5px 15px rgba(0, 0, 0, 15);
 }
 
+/* Mobile menu styles */
+.mobile-menu-icon {
+  display: none; /* Initially hide on desktop */
+  cursor: pointer;
+  padding: 10px;
+}
 
+@media (max-width: 768px) {
+
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    border-radius: 0 0 0px 0px;
+    margin-bottom: 0;
+    margin-top: 0;
+    height: 800px;
+    position: relative; /* Ensure relative positioning for absolute children */
+  }
+  .titles {
+    display: none; /* Hide titles on mobile */
+  }
+
+  .mobile-menu-icon {
+    display: block; /* Show hamburger icon on mobile */
+  }
+
+  .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 5px 0;
+    transition: 0.4s;
+  }
+
+  .change .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+
+  .change .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .change .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+
+  .mobile-menu-items {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 70px; /* Positioning below the navbar */
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 10px 0;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Ensure it appears above other content */
+  }
+
+  .mobile-menu-items button {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #333;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+  .mobile-menu-items button:hover {
+    color: #084992; /* Change color on hover */
+  }
+}
+
+.vertical-list,
+.horizontal-list {
+  display: none;
+}

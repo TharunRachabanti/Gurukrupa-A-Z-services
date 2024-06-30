@@ -8,7 +8,7 @@ const YoutubeDisplayComponent = () => {
     <div className="youtube-Display-container">
       <h2 className="our-services-heading">Explore Our Services</h2>
       <p className="section-description">
-        Check out our services and see what we have to offer.
+      Check out our services to see what we offer.
       </p>
       <div className="youtube-video-row">
         <YoutubeVideoContainer link="https://www.youtube.com/embed/kqmeIpRbJhk?si=m5W2l5yDtuex0KRO" />

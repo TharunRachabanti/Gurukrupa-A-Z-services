@@ -1,4 +1,3 @@
-// Difference.js
 import React from 'react';
 import '../styles/difference.css';
 import DifferenceContainer from './differenceContainer1';
@@ -19,9 +18,9 @@ const Difference = () => {
         explanation="Our team of professionals is highly experienced and dedicated to providing expert guidance in their respective fields. You can trust that you're receiving top-notch advice and support."
         icon="fas fa-users"
       />
-       <DifferenceContainer
+      <DifferenceContainer
         title="Diverse Service Range"
-        explanation=" A-Z Services extends its support beyond the basics. We offer a wide range of services, including food supply consultancy and social, cultural, and spiritual services, making us a versatile and holistic solution for your requirements."
+        explanation="A-Z Services extends its support beyond the basics. We offer a wide range of services, including food supply consultancy and social, cultural, and spiritual services, making us a versatile and holistic solution for your requirements."
         icon="fas fa-cogs"
       />
       <DifferenceContainer
@@ -29,7 +28,7 @@ const Difference = () => {
         explanation="A-Z Services is dedicated to making a positive impact on the lives of our customers and the community as a whole. By choosing us, you're contributing to a greater social good."
         icon="fas fa-hands-helping"
       />
-       <DifferenceContainer
+      <DifferenceContainer
         title="Trust and Reliability"
         explanation="With a track record of reliability and trustworthiness, A-Z Services is a name you can depend on. We value the trust our customers place in us and strive to exceed their expectations."
         icon="fas fa-lock fa"
@@ -45,6 +44,3 @@ const Difference = () => {
 };
 
 export default Difference;
-
-
-
