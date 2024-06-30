@@ -13,7 +13,7 @@
 }
 
 .appbar {
-  width: 100%;
+  width: 98%;
   text-align: center;
   padding: 10px;
   display: flex;
@@ -148,7 +148,7 @@
     border-radius: 0 0 0px 0px;
     margin-bottom: 0;
     margin-top: 0;
-    height: 800px;
+    height: 500px;
     position: relative; /* Ensure relative positioning for absolute children */
   }
   .titles {
@@ -162,8 +162,9 @@
   .bar {
     width: 25px;
     height: 3px;
-    background-color: #333;
+    background-color: #ffffff;
     margin: 5px 0;
+    margin-right: 10px;
     transition: 0.4s;
   }
 
@@ -180,22 +181,24 @@
   }
 
   .mobile-menu-items {
+    margin: 50px;
     display: flex;
     flex-direction: column;
     position: absolute;
     top: 70px; /* Positioning below the navbar */
     left: 0;
     right: 0;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(0, 0, 0, 0.9);
     padding: 10px 0;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-    z-index: 1000; /* Ensure it appears above other content */
+    box-shadow: 0 5px 10px rgba(244, 244, 244, 0.1);
+    z-index: 1000; 
+    border-radius: 20px;/* Ensure it appears above other content */
   }
 
   .mobile-menu-items button {
     margin: 10px 0;
     font-size: 18px;
-    color: #333;
+    color: #ffffff;
     background-color: transparent;
     border: none;
     cursor: pointer;
@@ -204,6 +207,40 @@
   .mobile-menu-items button:hover {
     color: #084992; /* Change color on hover */
   }
+  .title h1 {
+    width: 100%;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 65px;
+    color: #084992;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    word-spacing: 0.3em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-shadow: -5px -5px 0 rgba(255, 255, 255, 0.557), 1px -5px 0 rgba(255, 255, 255, 0.557), -5px 1px 0 rgba(255, 255, 255, 0.557), 1px 1px 0 rgb(238, 244, 244);
+  }
+  .para {
+    width: 85%;
+    text-align: center;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 14px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman';
+    line-height: 1.3;
+    font-weight: 50;
+    margin-top: 0px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(5, 0, 0, 0.6);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  }
+  
 }
 
 .vertical-list,
